@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>noop-works｜データ分析・業務効率化 Noop のポートフォリオ</title>
+  <meta name="description" content="Excelに散らばったデータの整理から、Pythonによる集計・可視化、レポート作成の自動化まで。手作業に時間を取られている業務を、繰り返し回せる仕組みに変えるNoop（noop-works）のポートフォリオサイトです。">
+
+  <!-- OGP（仮）：公開時に URL と画像パスを差し替え -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="noop-works｜データ分析・業務効率化 Noop のポートフォリオ">
+  <meta property="og:description" content="散らばった数字を、判断できる形に。Pythonによるデータ集計・可視化、レポート作成の自動化を行っています。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/ogp.png">
+  <meta property="og:site_name" content="noop-works">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSが有効なときだけフェードイン用の初期状態を適用する -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ================= Header ================= -->
+  <header class="header" id="header">
+    <div class="header__inner l-container">
+      <!-- ロゴ：画像にする場合は <span class="logo__text"> を <img class="logo__img" src="images/logo.svg" alt="noop-works"> に差し替え -->
+      <a class="logo" href="#top" id="header-logo">
+        <span class="logo__text">noop<span class="logo__hyphen">-</span>works</span>
+      </a>
+
+      <button type="button" class="hamburger" id="hamburger" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#works">Works</a></li>
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= FV ================= -->
+    <section class="fv" id="top" aria-labelledby="fv-title">
+      <div class="fv__inner l-container">
+        <div class="fv__content">
+          <p class="fv__eyebrow">Data Analysis &amp; Automation</p>
+          <h1 class="fv__title" id="fv-title">散らばった数字を、<br><span class="fv__title-em">判断できる形</span>に。</h1>
+
+          <div class="fv__profile">
+            <p class="fv__name-row">
+              <span class="fv__name">Noop</span>
+              <span class="fv__role">データ分析 / 業務効率化</span>
+            </p>
+            <p class="fv__role-detail">Pythonによるデータ集計・可視化、レポート作成の自動化</p>
+          </div>
+
+          <ul class="fv__keywords" aria-label="対応領域">
+            <li class="fv__keyword">データ集計</li>
+            <li class="fv__keyword">データクレンジング</li>
+            <li class="fv__keyword">可視化・レポート</li>
+            <li class="fv__keyword">業務自動化</li>
+          </ul>
+
+          <p class="fv__lead">Excelに散らばったデータの整理から、Pythonを使った集計・可視化、レポート作成の自動化まで。手作業に時間を取られている業務を、繰り返し回せる仕組みに変えます。</p>
+
+          <div class="fv__actions">
+            <a class="btn btn--primary" href="#contact">
+              お問い合わせ・ご相談
+              <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="text-link" href="#works">実績を見る</a>
+          </div>
+        </div>
+
+        <figure class="fv__visual">
+          <!-- 差し替え：src="images/fv.jpg" -->
+          <img class="fv__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23E2E8F2'/%3E%3Ctext x='400' y='300' fill='%235A6478' font-family='Montserrat,sans-serif' font-size='28' font-weight='700' letter-spacing='6' text-anchor='middle' dominant-baseline='middle'%3EIMAGE%3C/text%3E%3C/svg%3E" alt="データ集計・可視化の作業イメージ" width="800" height="600">
+          <p class="fv__badge">
+            <span class="fv__badge-label">月次レポート作成</span>
+            <span class="fv__badge-value">約3時間 <span aria-hidden="true">→</span><span class="visually-hidden">から</span> 20分</span>
+          </p>
+        </figure>
+      </div>
+
+      <a class="fv__scroll" href="#about">
+        <span class="fv__scroll-text">SCROLL</span>
+        <svg class="fv__scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section class="section section--sub about" id="about" aria-labelledby="about-title">
+      <div class="l-container">
+        <h2 class="section-title js-fade" id="about-title">
+          <span class="section-title__en">ABOUT</span>
+          <span class="section-title__ja">自己紹介</span>
+        </h2>
+
+        <div class="about__inner">
+          <figure class="about__photo js-fade">
+            <!-- 差し替え：src="images/profile.jpg" -->
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23E2E8F2'/%3E%3Ctext x='400' y='300' fill='%235A6478' font-family='Montserrat,sans-serif' font-size='28' font-weight='700' letter-spacing='6' text-anchor='middle' dominant-baseline='middle'%3EIMAGE%3C/text%3E%3C/svg%3E" alt="Noopのプロフィール写真" width="600" height="600" loading="lazy">
+            <figcaption class="about__caption">
+              <span class="about__caption-name">Noop</span>
+              <span class="about__caption-role">noop-works｜データ分析 / 業務効率化</span>
+            </figcaption>
+          </figure>
+
+          <div class="about__body">
+            <p class="about__text js-fade">事業会社で働きながら、Pythonを使ったデータ集計と業務効率化に取り組んでいます。日々の業務で発生する集計作業を自動化するところから始め、現在はPython 3 エンジニア認定データ分析試験に向けて、pandasやNumPyによるデータ処理を体系的に学んでいます。大事にしているのは、分析そのものよりも「その数字を見て何を決められるか」。受け取った人がすぐ動ける形まで落とし込むことを心がけています。</p>
+
+            <div class="about__strengths js-fade">
+              <h3 class="subheading">経歴・強み</h3>
+              <ul class="strength-list">
+                <li class="strength-list__item">
+                  <svg class="strength-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+                  <span>事業会社で実務を担当しながら、データ集計と業務効率化に取り組み中</span>
+                </li>
+                <li class="strength-list__item">
+                  <svg class="strength-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+                  <span>Excelでの手作業集計をPythonに置き換え、月次レポートの作成を<strong class="u-marker">約3時間から20分に短縮</strong></span>
+                </li>
+                <li class="strength-list__item">
+                  <svg class="strength-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+                  <span>pandas / NumPy によるデータ整形・可視化。手順を残して誰でも再実行できる形で納品</span>
+                </li>
+                <li class="strength-list__item">
+                  <svg class="strength-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+                  <span>Python 3 エンジニア認定データ分析試験に向けて学習中（受験予定）</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Skills ================= -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="l-container">
+        <h2 class="section-title js-fade" id="skills-title">
+          <span class="section-title__en">SKILLS</span>
+          <span class="section-title__ja">できること</span>
+        </h2>
+
+        <ul class="skills__grid">
+          <li class="js-fade" style="--delay: 0s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">01</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg>
+              </div>
+              <h3 class="skill-card__title">データ集計の自動化</h3>
+              <p class="skill-card__text">Excelやスプレッドシートでの繰り返し作業を、Pythonスクリプトに置き換えます。毎月発生する手作業を、実行1回で終わる形に整理します。</p>
+            </article>
+          </li>
+          <li class="js-fade" style="--delay: .1s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">02</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18l-7 8.5V19l-4 2v-7.5z"/></svg>
+              </div>
+              <h3 class="skill-card__title">データクレンジング</h3>
+              <p class="skill-card__text">表記ゆれ・欠損・重複が混ざったデータを、集計できる状態まで整えます。何をどう直したかの記録も合わせてお渡しします。</p>
+            </article>
+          </li>
+          <li class="js-fade" style="--delay: .2s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">03</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M8 17v-5"/><path d="M13 17V8"/><path d="M18 17v-8"/></svg>
+              </div>
+              <h3 class="skill-card__title">レポート / ダッシュボード作成</h3>
+              <p class="skill-card__text">集計結果をグラフと短い解説にまとめます。見た人がそのまま判断に使える形を目指します。</p>
+            </article>
+          </li>
+          <li class="js-fade" style="--delay: 0s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">04</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg>
+              </div>
+              <h3 class="skill-card__title">Excel / スプレッドシート改善</h3>
+              <p class="skill-card__text">関数やシート構成を見直し、壊れにくく引き継ぎやすいファイルに作り替えます。</p>
+            </article>
+          </li>
+          <li class="js-fade" style="--delay: .1s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">05</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 3l1.8 4.7 4.7 1.8-4.7 1.8L11 16l-1.8-4.7L4.5 9.5l4.7-1.8z"/><path d="M18.5 14l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>
+              </div>
+              <h3 class="skill-card__title">生成AIを使った業務効率化</h3>
+              <p class="skill-card__text">定型の文書作成や情報整理にAIを組み込み、品質を保ったまま作業時間を減らす手順を設計します。</p>
+            </article>
+          </li>
+          <li class="js-fade" style="--delay: .2s">
+            <article class="skill-card">
+              <span class="skill-card__num" aria-hidden="true">06</span>
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6M9 18h3"/></svg>
+              </div>
+              <h3 class="skill-card__title">業務フローの棚卸し・ドキュメント化</h3>
+              <p class="skill-card__text">属人化している作業を洗い出し、手順書に落とします。担当が変わっても回る状態をつくります。</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= Works ================= -->
+    <section class="works" id="works" aria-labelledby="works-title">
+      <!-- Works導入部（ベタ塗り帯） -->
+      <div class="works__intro">
+        <div class="l-container">
+          <h2 class="section-title section-title--light js-fade" id="works-title">
+            <span class="section-title__en">WORKS</span>
+            <span class="section-title__ja">実績紹介</span>
+          </h2>
+          <p class="works__lead js-fade">データを集めるところから、繰り返し回せる仕組みにするところまで。<br class="u-pc-only">各工程での取り組みをまとめています。</p>
+
+          <ol class="flow">
+            <li class="flow__item js-fade" style="--delay: 0s">
+              <span class="flow__num">01 COLLECT</span>
+              <span class="flow__title">集める</span>
+              <span class="flow__text">散らばったExcel・CSVをひとつに</span>
+            </li>
+            <li class="flow__item js-fade" style="--delay: .1s">
+              <span class="flow__num">02 CLEAN</span>
+              <span class="flow__title">整える</span>
+              <span class="flow__text">表記ゆれ・欠損・重複を処理</span>
+            </li>
+            <li class="flow__item js-fade" style="--delay: .2s">
+              <span class="flow__num">03 VISUALIZE</span>
+              <span class="flow__title">見える化</span>
+              <span class="flow__text">グラフと短い解説にまとめる</span>
+            </li>
+            <li class="flow__item js-fade" style="--delay: .3s">
+              <span class="flow__num">04 AUTOMATE</span>
+              <span class="flow__title">仕組み化</span>
+              <span class="flow__text">実行1回で回る形にする</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 実績カード：script.js の works 配列から生成 -->
+      <div class="works__body">
+        <div class="l-container">
+          <ul class="works__grid" id="works-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="l-container">
+        <h2 class="section-title js-fade" id="faq-title">
+          <span class="section-title__en">FAQ</span>
+          <span class="section-title__ja">よくある質問</span>
+        </h2>
+
+        <div class="faq__list js-fade">
+          <div class="faq-item">
+            <h3 class="faq-item__question">
+              <button type="button" class="faq-item__button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__label">制作の費用感を教えてください。</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-item__panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <div class="faq-item__panel-inner">
+                <div class="faq-item__answer">
+                  <span class="faq-item__a" aria-hidden="true">A</span>
+                  <p>作業量と対応範囲によって変わります。データの状態を拝見したうえでお見積りします。お見積りは無料です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-item__question">
+              <button type="button" class="faq-item__button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__label">対応できる範囲はどこまでですか？</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-item__panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <div class="faq-item__panel-inner">
+                <div class="faq-item__answer">
+                  <span class="faq-item__a" aria-hidden="true">A</span>
+                  <p>データの整理・集計・可視化・自動化スクリプトの作成まで対応可能です。基幹システムの改修やサーバー構築は別途ご相談ください。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-item__question">
+              <button type="button" class="faq-item__button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__label">納期はどのくらいかかりますか？</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-item__panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <div class="faq-item__panel-inner">
+                <div class="faq-item__answer">
+                  <span class="faq-item__a" aria-hidden="true">A</span>
+                  <p>集計スクリプトの作成で1〜2週間、レポート設計を含む場合で3〜4週間が目安です。お急ぎの場合はご相談ください。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-item__question">
+              <button type="button" class="faq-item__button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__label">リモートのみでの進行は可能ですか？</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-item__panel" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <div class="faq-item__panel-inner">
+                <div class="faq-item__answer">
+                  <span class="faq-item__a" aria-hidden="true">A</span>
+                  <p>可能です。オンラインMTGとチャットで全国対応しています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-item__question">
+              <button type="button" class="faq-item__button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__label">公開後の修正や運用もお願いできますか？</span>
+                <span class="faq-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-item__panel" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <div class="faq-item__panel-inner">
+                <div class="faq-item__answer">
+                  <span class="faq-item__a" aria-hidden="true">A</span>
+                  <p>対応可能です。手順書を付けてお渡しし、納品後の修正や運用のご相談も承ります。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="l-container">
+        <h2 class="section-title section-title--light js-fade" id="contact-title">
+          <span class="section-title__en">CONTACT</span>
+          <span class="section-title__ja">お問い合わせ</span>
+        </h2>
+
+        <p class="contact__lead js-fade">データの整理や集計、レポート作成の手間でお困りのことはありませんか？<br class="u-pc-only">「何から頼めばいいか分からない」という段階でも、お気軽にご相談ください。</p>
+
+        <div class="contact__action js-fade">
+          <!-- リンク先：GoogleフォームなどのURLに差し替え -->
+          <a class="btn btn--white btn--lg" href="#" target="_blank" rel="noopener">
+            お問い合わせはこちら
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            <span class="visually-hidden">（新しいタブで開きます）</span>
+          </a>
+        </div>
+
+        <div class="sns js-fade">
+          <p class="sns__label">FOLLOW</p>
+          <ul class="sns__list">
+            <li>
+              <a class="sns__link" href="#" aria-label="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="sns__link" href="#" aria-label="note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19V6.5h7.5A4.5 4.5 0 0 1 18 11v8"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="sns__link" href="#" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.930 0-1.310.465-2.38 1.235-3.220-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="footer__inner l-container">
+      <a class="logo logo--footer" href="#top">
+        <span class="logo__text">noop<span class="logo__hyphen">-</span>works</span>
+      </a>
+      <p class="footer__copy"><small>&copy; 2026 Noop</small></p>
+      <button type="button" class="page-top" id="page-top" aria-label="ページの先頭へ戻る">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ================= Works Modal ================= -->
+  <div class="modal" id="work-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal__close" data-modal-close aria-label="閉じる">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__content">
+        <figure class="modal__image">
+          <img id="modal-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23E2E8F2'/%3E%3C/svg%3E" alt="" width="800" height="450">
+        </figure>
+        <div class="modal__body">
+          <p class="modal__category" id="modal-category"></p>
+          <h2 class="modal__title" id="modal-title"></h2>
+          <dl class="modal__list">
+            <div class="modal__item">
+              <dt>担当範囲</dt>
+              <dd id="modal-role"></dd>
+            </div>
+            <div class="modal__item">
+              <dt>課題</dt>
+              <dd id="modal-challenge"></dd>
+            </div>
+            <div class="modal__item">
+              <dt>解決</dt>
+              <dd id="modal-solution"></dd>
+            </div>
+            <div class="modal__item">
+              <dt>使用ツール</dt>
+              <dd><ul class="tag-list" id="modal-tools"></ul></dd>
+            </div>
+          </dl>
+          <a class="btn btn--primary modal__link" id="modal-link" href="#" target="_blank" rel="noopener">
+            詳しく見る
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            <span class="visually-hidden">（新しいタブで開きます）</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
